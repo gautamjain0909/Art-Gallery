@@ -1,0 +1,35 @@
+{
+  "name": "art-gallery",
+  "version": "1.0.0",
+  "description": "Art Gallery built with Parcel",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index3.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index3.html --no-content-hash --no-minify --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "NAWAB$",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.6.1",
+    "imagesloaded": "^4.1.4",
+    "locomotive-scroll": "^3.6.1",
+    "parcel": "latest",
+    "splitting": "^1.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gautamjain0909/Art-Gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gautamjain0909/Art-Gallery/issues"
+  },
+  "homepage": "https://github.com/gautamjain0909/Art-Gallery#readme",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "parcel-bundler": "^1.12.5"
+  }
+}

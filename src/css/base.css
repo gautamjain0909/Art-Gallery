@@ -626,6 +626,10 @@ html.has-scroll-dragging {
   font-weight: 700;
   font-size: 1.3rem;
   cursor: pointer;
+  color: #e3154d;
+}
+.link--leda :hover {
+  color: #fff;
 }
 
 .material-symbols-outlined {
